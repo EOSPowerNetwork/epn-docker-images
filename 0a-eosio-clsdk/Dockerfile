@@ -73,3 +73,10 @@ if [ -f ~/.git-completion.bash ]; then\n\
   . ~/.git-completion.bash\n\
 fi\n\
 ' >> /root/.bashrc
+
+# A few programs to help when various contribtors all need to verify multisig transactions
+RUN export DEBIAN_FRONTEND=noninteractive \
+    && apt-get update \
+    && apt-get install -yq      \
+        jq                      \
+        xxd

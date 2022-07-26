@@ -10,4 +10,5 @@ The number in the prefix identifies what layer image it is in the tree. The char
 
 ## Todo
 
-Extract a common root docker image between 0a and 0b
+- Extract a common root docker image between 0a and 0b
+- Delete the vscode-open-system-epn project in favor of pointing at a docker image built by this eosio-epn-clsdk docker image.
